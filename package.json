@@ -4,6 +4,7 @@
   "description": "test automation using webdriver io",
   "main": "index.js",
   "scripts": {
+    "start": "selenium-standalone start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/nashis/webdriver_io/issues"
   },
-  "homepage": "https://github.com/nashis/webdriver_io#readme"
+  "homepage": "https://github.com/nashis/webdriver_io#readme",
+  "devDependencies": {
+    "webdriverio": "^4.2.1"
+  }
 }
