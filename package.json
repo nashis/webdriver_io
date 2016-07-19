@@ -2,9 +2,13 @@
   "name": "webdriver_io",
   "version": "0.0.1",
   "description": "test automation using webdriver io",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "start": "selenium-standalone start",
+    "build": "npm run clean && npm run build:server",
+    "build:server": "babel -d ./build ./app -s",
+    "clean": "rm -rf ./build",
+    "postinstall": "npm run build",
+    "start": "node --debug build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +27,8 @@
   },
   "homepage": "https://github.com/nashis/webdriver_io#readme",
   "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
     "webdriverio": "^4.2.1"
   }
 }
