@@ -25,4 +25,6 @@ npm start
 
 # TODO
 
-Bring the browser to focus
+* Option to configure items, like coffee type, grain type, quantity etc.
+* Introduce hierarchy to the solution by decomposing uiselector to page/ui scope
+* Bring the browser to focus, and maximize
